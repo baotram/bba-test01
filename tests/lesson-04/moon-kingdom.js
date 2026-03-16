@@ -5,7 +5,7 @@ const characters = [{ name: "Tram", level: 2, health: 1000 }, { name: "Tram", le
 // C2: let characters = new Array["name","level","health"];
 
 // Sử dụng hàm map để tạo ra mảng mới: charactersPowerUp
-const charactersPowerUp = characters.map((character, index) => ({
+const charactersPowerUp = characters.map((character) => ({
     name: character.name.toUpperCase(),
     level: character.level * 2,
     health: character.health * 3
