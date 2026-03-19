@@ -2,7 +2,7 @@
 console.log("-------Bài 1------");
 // Khai báo mảng các object: characters có các thuộc tính: name, level, health.
 const characters = [{ name: "Tram", level: 2, health: 1000 }, { name: "Tram", level: 2, health: 1001 }];
-// C2: let characters = new Array["name","level","health"];
+// C2: let characters = new Array[{ name: "Tram", level: 2, health: 1000 }, { name: "Tram", level: 2, health: 1001 }];
 
 // Sử dụng hàm map để tạo ra mảng mới: charactersPowerUp
 const charactersPowerUp = characters.map((character) => ({
@@ -36,9 +36,9 @@ function printLeaderboard(playerArr) {
         } else if (i === 1) {
             metal = "🥈";
         } else if (i === 2) {
-            metal = "🥈";
+            metal = "🥉";
         }
-        console.log(metal + " " + + (i + 1) + ". " + sortedArr[i].name + " - " + sortedArr[i].score + " pts");
+        console.log(metal + " " + (i + 1) + ". " + sortedArr[i].name + " - " + sortedArr[i].score + " pts");
     }
 }
 // Call function
